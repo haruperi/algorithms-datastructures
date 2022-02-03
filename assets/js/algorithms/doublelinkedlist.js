@@ -108,6 +108,28 @@ class Doublelinkedlist {
         return false
     }
 
+    insetNode(index, value){
+        if (index === 0)
+            return this.unshiftNode(value)
+
+        if (index === this.length)
+            return this.pushNewNode(value)
+
+        let current = this.getNode(index-1)
+        let after = current.next
+
+        if (current) {
+            const newNode = new Node(value)
+            newNode.next = after
+            newNode.prev = current
+            current.next = newNode
+            after.prev = newNode
+            this.length++
+            return true
+        }
+        return false
+    }
+
 
 }
 
