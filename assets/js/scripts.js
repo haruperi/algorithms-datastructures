@@ -1,9 +1,9 @@
-import { Linkedlist } from "./algorithms/linkedlist.js"
-import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js"
-import { Stack } from "./algorithms/stack.js"
-import { Queque } from "./algorithms/queque.js"
-import { BinarySearchTree } from "./algorithms/binary-search-tree.js";
-import { Hashtables } from "./algorithms/hashtables.js";
+import { Linkedlist } from "./data-structures/linkedlist.js"
+import { Doublelinkedlist} from "./data-structures/doublelinkedlist.js"
+import { Stack } from "./data-structures/stack.js"
+import { Queque } from "./data-structures/queque.js"
+import { BinarySearchTree } from "./data-structures/binary-search-tree.js";
+import { Hashtables } from "./data-structures/hashtables.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -135,6 +135,11 @@ import { Hashtables } from "./algorithms/hashtables.js";
 /*****     Data Structures : Hash Tables     *****/
 /* Constructor */
 let hashtable = new Hashtables()
+
+/* Set */
+hashtable.set("lumber", 70)
+hashtable.set("washers", 50)
+hashtable.set("bolts", 1400)
 
 // Output
 console.log(hashtable)
