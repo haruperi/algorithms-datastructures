@@ -1,5 +1,6 @@
 import { Linkedlist } from "./algorithms/linkedlist.js"
-import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js";
+import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js"
+import { Stack } from "./algorithms/stack.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -46,12 +47,12 @@ import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js";
 
 /*****     Data Structures : Double Linked List     *****/
 /* Constructor */
- let doubleLinkedList = new Doublelinkedlist(1)
+// let doubleLinkedList = new Doublelinkedlist(1)
 
 
 /* Push */
-doubleLinkedList.pushNewNode(2)
-doubleLinkedList.pushNewNode(3)
+//doubleLinkedList.pushNewNode(2)
+//doubleLinkedList.pushNewNode(3)
 
 
 /* Pop */
@@ -81,7 +82,13 @@ doubleLinkedList.pushNewNode(3)
 // console.log(doubleLinkedList.insetNode(1,2))
 
 /* Remove */
- console.log(doubleLinkedList.removeNode(1))
+// console.log(doubleLinkedList.removeNode(1))
+
+
+/*****     Data Structures : Stacks     *****/
+/* Constructor */
+ let stack = new Stack(1)
+
 
 // Output
-console.log(doubleLinkedList)
+console.log(stack)
