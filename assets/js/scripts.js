@@ -27,6 +27,8 @@ linkedlist.pushNewNode(99)
 // linkedlist.shiftNode()
 // console.log(linkedlist.shiftNode())
 
+/* Get */
+// console.log(linkedlist.getNode(3))
 
 // Output
 console.log(linkedlist)
