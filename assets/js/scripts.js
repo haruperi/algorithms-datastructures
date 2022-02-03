@@ -55,9 +55,11 @@ doubleLinkedList.pushNewNode(3)
 
 
 /* Pop */
-//linkedlist.popNode()
-//linkedlist.popNode()
-//console.log(linkedlist.popNode())
+console.log(doubleLinkedList.popNode())
+console.log(doubleLinkedList.popNode())
+console.log(doubleLinkedList.popNode())
+
+
 
 /* unshift */
 //linkedlist.unshiftNode(11)

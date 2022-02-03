@@ -23,6 +23,26 @@ class Doublelinkedlist {
         this.length++
         return this
     }
+
+    popNode() {
+        if(this.length === 0)
+            return undefined
+
+        let temp
+        if (this.length === 1){
+            this.head = null
+            this.tail = null
+        } else {
+            temp = this.tail
+            this.tail = this.tail.prev
+            this.tail.next = null
+            temp.prev = null
+        }
+
+        this.length--
+        return temp
+
+    }
 }
 
 
