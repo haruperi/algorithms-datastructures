@@ -3,6 +3,7 @@ import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js"
 import { Stack } from "./algorithms/stack.js"
 import { Queque } from "./algorithms/queque.js"
 import { BinarySearchTree } from "./algorithms/binary-search-tree.js";
+import { Hashtables } from "./algorithms/hashtables.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -113,22 +114,27 @@ import { BinarySearchTree } from "./algorithms/binary-search-tree.js";
 
 /*****     Data Structures : Trees     *****/
 /* Constructor */
-let bstree = new BinarySearchTree()
+//let bstree = new BinarySearchTree()
 
 /* Insert */
-bstree.insertNode(47)
-bstree.insertNode(21)
-bstree.insertNode(76)
-bstree.insertNode(18)
-bstree.insertNode(52)
-bstree.insertNode(82)
-bstree.insertNode(27)
+// bstree.insertNode(47)
+// bstree.insertNode(21)
+// bstree.insertNode(76)
+// bstree.insertNode(18)
+// bstree.insertNode(52)
+// bstree.insertNode(82)
+// bstree.insertNode(27)
 
 /* Contains */
-console.log(bstree.containsNode(17))
+//console.log(bstree.containsNode(17))
 
 /* Minimum Value */
-console.log(bstree.minValueNode(bstree.root.right))
+//console.log(bstree.minValueNode(bstree.root.right))
+
+
+/*****     Data Structures : Hash Tables     *****/
+/* Constructor */
+let hashtable = new Hashtables()
 
 // Output
-console.log(bstree)
+console.log(hashtable)
