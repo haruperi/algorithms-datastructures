@@ -102,6 +102,25 @@ class Linkedlist {
         return false
     }
 
+    insetNode(index, value){
+        if (index === 0)
+            return this.unshiftNode(value)
+
+        if (index === this.length)
+            return this.pushNewNode(value)
+
+        let current = this.getNode(index-1)
+
+        if (current) {
+            const newNode = new Node(value)
+            newNode.next = current.next
+            current.next = newNode
+            this.length++
+            return true
+        }
+        return false
+    }
+
 
 }
 

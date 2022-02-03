@@ -33,5 +33,8 @@ linkedlist.pushNewNode(99)
 /* Set */
 // console.log(linkedlist.setNode(2,100))
 
+/* Insert */
+// console.log(linkedlist.insetNode(2,100))
+
 // Output
 console.log(linkedlist)
