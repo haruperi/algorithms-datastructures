@@ -50,7 +50,7 @@ import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js";
 
 
 /* Push */
-//doubleLinkedList.pushNewNode(2)
+doubleLinkedList.pushNewNode(2)
 doubleLinkedList.pushNewNode(3)
 
 
@@ -78,12 +78,10 @@ doubleLinkedList.pushNewNode(3)
 //console.log(doubleLinkedList.setNode(2,100))
 
 /* Insert */
- console.log(doubleLinkedList.insetNode(1,2))
+// console.log(doubleLinkedList.insetNode(1,2))
 
 /* Remove */
-// console.log(linkedlist.removeNode(2))
+ console.log(doubleLinkedList.removeNode(1))
 
-/* Reverse Linked list */
-//console.log(linkedlist.reverseLinkedList())
 // Output
 console.log(doubleLinkedList)

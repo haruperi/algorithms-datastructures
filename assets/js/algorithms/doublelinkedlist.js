@@ -130,6 +130,26 @@ class Doublelinkedlist {
         return false
     }
 
+    removeNode(index){
+        if (index === 0)
+            return this.shiftNode()
+
+        if (index === this.length-1)
+            return this.popNode()
+
+        let current = this.getNode(index)
+
+        if (current) {
+            current.prev.next = current.next
+            current.next.prev = current.prev
+            current.next = null
+            current.prev = null
+            this.length--
+            return current
+        }
+        return undefined
+    }
+
 
 }
 
