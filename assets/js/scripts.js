@@ -4,6 +4,7 @@ import { Stack } from "./data-structures/stack.js"
 import { Queque } from "./data-structures/queque.js"
 import { BinarySearchTree } from "./data-structures/binary-search-tree.js";
 import { Hashtables } from "./data-structures/hashtables.js";
+import { factorial } from "./algorithms/recursion.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -141,5 +142,12 @@ hashtable.set("lumber", 70)
 hashtable.set("washers", 50)
 hashtable.set("bolts", 1400)
 
+
+
+
+
+
+/*****     Algorithms : Recursion    *****/
+
 // Output
-console.log(hashtable)
+console.log(factorial(5))
