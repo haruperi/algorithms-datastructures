@@ -1,16 +1,18 @@
-import {Node} from "./node.js";
+import { Node } from "./node.js";
 
 class Linkedlist {
 
     constructor(value) {
         const newNode = new Node(value)
+
         this.head = newNode
         this.tail = this.head
         this.length = 1
     }
 
-    pushNewNode (value){
+    pushNewNode(value){
         const newNode = new Node(value)
+
         if (!this.head) {
             this.head = newNode
             this.tail = newNode
@@ -18,36 +20,38 @@ class Linkedlist {
             this.tail.next = newNode
             this.tail = newNode
         }
+
         this.length++
         return this
     }
 
-    popNode(){
-        if (!this.head)
+    popNode() {
+        if(!this.head)
             return undefined
 
-            let temp = this.head
-            let pre = this.head
+        let current = this.head
+        let previous = this.head
 
-            while (temp.next){
-                pre = temp
-                temp = temp.next
-            }
+        while (current.next){
+            previous = current
+            current = current.next
+        }
 
-            this.tail = pre
-            this.tail.next = null
-            this.length--
+        this.tail = previous
+        this.tail.next = null
+        this.length--
 
-            if (this.length===0) {
-                this.head = null
-                this.tail = null
-            }
+        if (this.length === 0){
+            this.head = null
+            this.tail = null
+        }
 
-            return temp
+        return current
     }
 
     unshiftNode(value){
-        const newNode = new Node(value)
+        const  newNode = new Node(value)
+
         if (!this.head) {
             this.head = newNode
             this.tail = newNode
@@ -55,13 +59,13 @@ class Linkedlist {
             newNode.next = this.head
             this.head = newNode
         }
+
         this.length++
         return this
-
     }
 
     shiftNode(){
-        if(!this.head)
+        if (!this.head)
             return undefined
 
         let temp = this.head
@@ -69,14 +73,14 @@ class Linkedlist {
         temp.next = null
         this.length--
 
-        if (this.length===0) {
+        if (this.length === 0){
             this.tail = null
         }
 
         return temp
     }
+
+
 }
 
-
-
-export {Linkedlist}
+export { Linkedlist }

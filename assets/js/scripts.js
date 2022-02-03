@@ -1,17 +1,32 @@
-import {Linkedlist} from "./algorithms/linkedlist.js";
+import { Linkedlist } from "./algorithms/linkedlist.js"
 
-let myLinkedList = new Linkedlist(11)
-myLinkedList.pushNewNode(3)
-//myLinkedList.pushNewNode(23)
-//myLinkedList.pushNewNode(7)
+/*****     Data Structures : Linked List     *****/
+/* Constructor */
+let linkedlist = new Linkedlist(4)
 
-//console.log(myLinkedList.popNode())
-//console.log(myLinkedList.popNode())
-//console.log(myLinkedList.popNode())
 
-//myLinkedList.unshiftNode(4)
+/* Push */
+linkedlist.pushNewNode(11)
+linkedlist.pushNewNode(32)
+linkedlist.pushNewNode(48)
+linkedlist.pushNewNode(99)
 
-console.log(myLinkedList.shiftNode())
-console.log(myLinkedList.shiftNode())
-console.log(myLinkedList.shiftNode())
-console.log(myLinkedList)
+/* Pop */
+//linkedlist.popNode()
+//linkedlist.popNode()
+//console.log(linkedlist.popNode())
+
+/* unshift */
+//linkedlist.unshiftNode(11)
+//linkedlist.unshiftNode(88)
+//linkedlist.unshiftNode(2)
+
+/* shift */
+//linkedlist.shiftNode(11)
+// console.log(linkedlist.shiftNode())
+// linkedlist.shiftNode()
+// console.log(linkedlist.shiftNode())
+
+
+// Output
+console.log(linkedlist)
