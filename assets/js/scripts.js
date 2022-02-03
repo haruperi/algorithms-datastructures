@@ -93,7 +93,8 @@ import { Stack } from "./algorithms/stack.js";
 stack.pushStack(2)
 stack.pushStack(3)
 
-
+/* Pop */
+console.log(stack.popStack())
 
 
 // Output

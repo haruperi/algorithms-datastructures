@@ -24,7 +24,18 @@ class Stack {
         return this
     }
 
+    //This code is exactly the same as SHIFT in linked list just without the tail and head replaced by top
+    popStack(){
+        if (this.length === 0)
+            return undefined
 
+        let temp = this.top
+        this.top = this.top.next
+        temp.next = null
+        this.length--
+
+        return temp
+    }
 
 }
 
