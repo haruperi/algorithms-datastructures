@@ -72,10 +72,10 @@ doubleLinkedList.pushNewNode(3)
 
 
 /* Get */
-console.log(doubleLinkedList.getNode(1))
+//console.log(doubleLinkedList.getNode(1))
 
 /* Set */
-//console.log(doubleLinkedList.setNode(2,100))
+console.log(doubleLinkedList.setNode(2,100))
 
 /* Insert */
 // console.log(linkedlist.insetNode(2,100))
