@@ -127,5 +127,8 @@ bstree.insertNode(27)
 /* Contains */
 console.log(bstree.containsNode(17))
 
+/* Minimum Value */
+console.log(bstree.minValueNode(bstree.root.right))
+
 // Output
 console.log(bstree)
