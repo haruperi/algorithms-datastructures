@@ -30,5 +30,8 @@ linkedlist.pushNewNode(99)
 /* Get */
 // console.log(linkedlist.getNode(3))
 
+/* Set */
+// console.log(linkedlist.setNode(2,100))
+
 // Output
 console.log(linkedlist)

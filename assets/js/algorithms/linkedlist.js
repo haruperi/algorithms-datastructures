@@ -92,6 +92,16 @@ class Linkedlist {
 
     }
 
+    setNode(index, value){
+        let current = this.getNode(index)
+
+        if (current) {
+            current.value = value
+            return true
+        }
+        return false
+    }
+
 
 }
 
