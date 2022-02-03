@@ -65,17 +65,17 @@ doubleLinkedList.pushNewNode(3)
 
 
 /* shift */
-console.log(doubleLinkedList.shiftNode())
-console.log(doubleLinkedList.shiftNode())
-console.log(doubleLinkedList.shiftNode())
-console.log(doubleLinkedList.shiftNode())
+// console.log(doubleLinkedList.shiftNode())
+// console.log(doubleLinkedList.shiftNode())
+// console.log(doubleLinkedList.shiftNode())
+// console.log(doubleLinkedList.shiftNode())
 
 
 /* Get */
-// console.log(linkedlist.getNode(3))
+console.log(doubleLinkedList.getNode(1))
 
 /* Set */
-// console.log(linkedlist.setNode(2,100))
+//console.log(doubleLinkedList.setNode(2,100))
 
 /* Insert */
 // console.log(linkedlist.insetNode(2,100))

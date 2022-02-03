@@ -77,6 +77,30 @@ class Doublelinkedlist {
 
         return temp
     }
+
+    getNode(index){
+        if (index < 0 || index > this.length)
+            return undefined
+
+        let current = this.head
+        if (index < this.length/2){
+            for (let i = 0; i < index; i++) {
+                current = current.next
+            }
+        }
+
+        current = this.tail
+        for (let i = this.length-1; i > index; i--) {
+            current = current.prev
+        }
+
+        return current
+
+    }
+
+
+
+
 }
 
 
