@@ -55,16 +55,14 @@ doubleLinkedList.pushNewNode(3)
 
 
 /* Pop */
-console.log(doubleLinkedList.popNode())
-console.log(doubleLinkedList.popNode())
-console.log(doubleLinkedList.popNode())
-
-
+// console.log(doubleLinkedList.popNode())
+// console.log(doubleLinkedList.popNode())
+// console.log(doubleLinkedList.popNode())
 
 /* unshift */
-//linkedlist.unshiftNode(11)
-//linkedlist.unshiftNode(88)
-//linkedlist.unshiftNode(2)
+doubleLinkedList.unshiftNode(11)
+doubleLinkedList.unshiftNode(88)
+
 
 /* shift */
 //linkedlist.shiftNode(11)
