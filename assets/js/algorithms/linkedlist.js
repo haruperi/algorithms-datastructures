@@ -121,6 +121,27 @@ class Linkedlist {
         return false
     }
 
+    removeNode(index){
+        if (index === 0)
+            return this.shiftNode()
+
+        if (index === this.length-1)
+            return this.popNode()
+
+        let previous = this.getNode(index-1)
+
+        if (previous) {
+            let current = previous.next
+            previous.next = current.next
+            current.next = null
+            this.length--
+            return current
+        }
+        return undefined
+    }
+
+
+
 
 }
 

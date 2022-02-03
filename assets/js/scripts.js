@@ -36,5 +36,8 @@ linkedlist.pushNewNode(99)
 /* Insert */
 // console.log(linkedlist.insetNode(2,100))
 
+/* Remove */
+ console.log(linkedlist.removeNode(2))
+
 // Output
 console.log(linkedlist)
