@@ -15,4 +15,12 @@ class DLLNode {
     }
 }
 
-export { Node, DLLNode }
+class BSTNode {
+    constructor(value) {
+        this.value = value
+        this.left = null
+        this.right = null
+    }
+}
+
+export { Node, DLLNode, BSTNode }

@@ -2,6 +2,7 @@ import { Linkedlist } from "./algorithms/linkedlist.js"
 import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js"
 import { Stack } from "./algorithms/stack.js"
 import { Queque } from "./algorithms/queque.js"
+import { BinarySearchTree } from "./algorithms/binary-search-tree.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -100,14 +101,21 @@ import { Queque } from "./algorithms/queque.js"
 
 /*****     Data Structures : Queque     *****/
 /* Constructor */
- let queque = new Queque(1)
+// let queque = new Queque(1)
 
 /* Enqueque */
-queque.enqueque(2)
-queque.enqueque(3)
+//queque.enqueque(2)
+//queque.enqueque(3)
 
 /* Dequeque */
-console.log(queque.dequeque())
+//console.log(queque.dequeque())
+
+
+/*****     Data Structures : Trees     *****/
+/* Constructor */
+let bstree = new BinarySearchTree()
+
+
 
 // Output
-console.log(queque)
+console.log(bstree)
