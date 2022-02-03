@@ -115,7 +115,14 @@ import { BinarySearchTree } from "./algorithms/binary-search-tree.js";
 /* Constructor */
 let bstree = new BinarySearchTree()
 
-
+/* Insert */
+bstree.insertNode(47)
+bstree.insertNode(21)
+bstree.insertNode(76)
+bstree.insertNode(18)
+bstree.insertNode(52)
+bstree.insertNode(82)
+bstree.insertNode(27)
 
 // Output
 console.log(bstree)
