@@ -102,6 +102,9 @@ import { Queque } from "./algorithms/queque.js"
 /* Constructor */
  let queque = new Queque(1)
 
+/* Enqueque */
+queque.enqueque(2)
+queque.enqueque(3)
 
 // Output
 console.log(queque)
