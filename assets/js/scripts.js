@@ -60,15 +60,16 @@ doubleLinkedList.pushNewNode(3)
 // console.log(doubleLinkedList.popNode())
 
 /* unshift */
-doubleLinkedList.unshiftNode(11)
-doubleLinkedList.unshiftNode(88)
+// doubleLinkedList.unshiftNode(11)
+// doubleLinkedList.unshiftNode(88)
 
 
 /* shift */
-//linkedlist.shiftNode(11)
-// console.log(linkedlist.shiftNode())
-// linkedlist.shiftNode()
-// console.log(linkedlist.shiftNode())
+console.log(doubleLinkedList.shiftNode())
+console.log(doubleLinkedList.shiftNode())
+console.log(doubleLinkedList.shiftNode())
+console.log(doubleLinkedList.shiftNode())
+
 
 /* Get */
 // console.log(linkedlist.getNode(3))
