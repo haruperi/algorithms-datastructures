@@ -1,5 +1,5 @@
 import { Linkedlist } from "./algorithms/linkedlist.js"
-import { DLLNode } from "./algorithms/node.js";
+import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js";
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -46,14 +46,13 @@ import { DLLNode } from "./algorithms/node.js";
 
 /*****     Data Structures : Double Linked List     *****/
 /* Constructor */
- let doubleLinkedList = new DLLNode(4)
+ let doubleLinkedList = new Doublelinkedlist(1)
 
 
 /* Push */
-// linkedlist.pushNewNode(11)
-// linkedlist.pushNewNode(32)
-// linkedlist.pushNewNode(48)
-// linkedlist.pushNewNode(99)
+doubleLinkedList.pushNewNode(2)
+doubleLinkedList.pushNewNode(3)
+
 
 /* Pop */
 //linkedlist.popNode()
