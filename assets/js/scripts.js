@@ -124,5 +124,8 @@ bstree.insertNode(52)
 bstree.insertNode(82)
 bstree.insertNode(27)
 
+/* Contains */
+console.log(bstree.containsNode(17))
+
 // Output
 console.log(bstree)
