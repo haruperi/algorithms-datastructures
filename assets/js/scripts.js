@@ -37,7 +37,10 @@ linkedlist.pushNewNode(99)
 // console.log(linkedlist.insetNode(2,100))
 
 /* Remove */
- console.log(linkedlist.removeNode(2))
+// console.log(linkedlist.removeNode(2))
+
+/* Reverse Linked list */
+console.log(linkedlist.reverseLinkedList())
 
 // Output
-console.log(linkedlist)
+//console.log(linkedlist)

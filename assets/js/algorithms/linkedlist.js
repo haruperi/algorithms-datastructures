@@ -140,6 +140,26 @@ class Linkedlist {
         return undefined
     }
 
+    reverseLinkedList(){
+        if (this.length === 1)
+            return this
+
+        let current = this.head
+        this.head = this.tail
+        this.tail = current
+
+        let nextNode
+        let previous = null
+
+        for (let i = 0; i < this.length; i++) {
+            nextNode = current.next
+            current.next = previous
+            previous = current
+            current = nextNode
+        }
+        return this
+    }
+
 
 
 
