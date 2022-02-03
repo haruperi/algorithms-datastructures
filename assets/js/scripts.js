@@ -89,6 +89,12 @@ import { Stack } from "./algorithms/stack.js";
 /* Constructor */
  let stack = new Stack(1)
 
+/* Push */
+stack.pushStack(2)
+stack.pushStack(3)
+
+
+
 
 // Output
 console.log(stack)
