@@ -1,6 +1,7 @@
 import { Linkedlist } from "./algorithms/linkedlist.js"
 import { Doublelinkedlist} from "./algorithms/doublelinkedlist.js"
-import { Stack } from "./algorithms/stack.js";
+import { Stack } from "./algorithms/stack.js"
+import { Queque } from "./algorithms/queque.js"
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -87,15 +88,20 @@ import { Stack } from "./algorithms/stack.js";
 
 /*****     Data Structures : Stacks     *****/
 /* Constructor */
- let stack = new Stack(1)
+// let stack = new Stack(1)
 
 /* Push */
-stack.pushStack(2)
-stack.pushStack(3)
+//stack.pushStack(2)
+//stack.pushStack(3)
 
 /* Pop */
-console.log(stack.popStack())
+//console.log(stack.popStack())
+
+
+/*****     Data Structures : Queque     *****/
+/* Constructor */
+ let queque = new Queque(1)
 
 
 // Output
-console.log(stack)
+console.log(queque)
