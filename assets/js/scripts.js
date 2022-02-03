@@ -106,5 +106,8 @@ import { Queque } from "./algorithms/queque.js"
 queque.enqueque(2)
 queque.enqueque(3)
 
+/* Dequeque */
+console.log(queque.dequeque())
+
 // Output
 console.log(queque)
