@@ -3,17 +3,16 @@ import { Node } from "./node.js";
 class Linkedlist {
 
     constructor(value) {
-        const newNode = new Node(value)
-
-        this.head = newNode
+        this.head = null
         this.tail = this.head
-        this.length = 1
+        this.length = 0
     }
 
-    pushNewNode(value){
+    pushNode(value){
         const newNode = new Node(value)
 
-        if (!this.head) {
+        if (this.length === 0)
+        {
             this.head = newNode
             this.tail = newNode
         } else {
@@ -26,11 +25,12 @@ class Linkedlist {
     }
 
     popNode() {
-        if(!this.head)
-            return undefined
+    if (this.length === 0)
+        return undefined
+
 
         let current = this.head
-        let previous = this.head
+        let previous = null
 
         while (current.next){
             previous = current
@@ -45,39 +45,37 @@ class Linkedlist {
             this.head = null
             this.tail = null
         }
-
         return current
     }
 
     unshiftNode(value){
         const  newNode = new Node(value)
 
-        if (!this.head) {
+        if(this.length === 0){
             this.head = newNode
             this.tail = newNode
         } else {
             newNode.next = this.head
             this.head = newNode
         }
-
         this.length++
         return this
     }
 
     shiftNode(){
-        if (!this.head)
+        if (this.length === 0)
             return undefined
 
-        let temp = this.head
-        this.head = this.head.next
-        temp.next = null
-        this.length--
-
-        if (this.length === 0){
+        let firstNode =  this.head
+        if (this.length === 1){
+            this.head = null
             this.tail = null
+        } else {
+            this.head = this.head.next
+            firstNode.next = null
         }
-
-        return temp
+        this.length--
+        return firstNode
     }
 
     getNode(index){
@@ -103,11 +101,14 @@ class Linkedlist {
     }
 
     insetNode(index, value){
+        if (index < 0)
+            return "Index can not be less than zero"
+
         if (index === 0)
             return this.unshiftNode(value)
 
-        if (index === this.length)
-            return this.pushNewNode(value)
+        if (index >= this.length)
+            return this.pushNode(value)
 
         let current = this.getNode(index-1)
 
@@ -158,6 +159,24 @@ class Linkedlist {
             current = nextNode
         }
         return this
+    }
+
+    printll(){
+        let current = this.head
+        for (let i = 0; i < this.length; i++) {
+            if (current == this.tail){
+                console.log(
+                    `value : ${current.value}
+                     next : null`
+                )
+            } else {
+                console.log(
+                    `value : ${current.value}
+                 next : ${current.next.value}`
+                )
+            }
+            current = current.next
+        }
     }
 
 

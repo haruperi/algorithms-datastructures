@@ -28,19 +28,18 @@ class Doublelinkedlist {
         if(this.length === 0)
             return undefined
 
-        let temp
+        let lastNode = this.tail
         if (this.length === 1){
             this.head = null
             this.tail = null
         } else {
-            temp = this.tail
-            this.tail = this.tail.prev
-            this.tail.next = null
-            temp.prev = null
+            this.tail = lastNode.prev
+            lastNode.next = null
+            lastNode.prev = null
         }
 
         this.length--
-        return temp
+        return lastNode
 
     }
 
@@ -148,6 +147,32 @@ class Doublelinkedlist {
             return current
         }
         return undefined
+    }
+
+    printdll(){
+        let current = this.head
+        for (let i = 0; i < this.length; i++) {
+            if (current == this.head){
+                console.log(
+                    `value : ${current.value}
+                     prev : null
+                     next : ${current.next.value}`
+                )
+            } else if (current == this.tail){
+                console.log(
+                    `value : ${current.value}
+                     prev : ${current.prev.value}
+                     next : null`
+                )
+            } else {
+                console.log(
+                    `value : ${current.value}
+                 prev : ${current.prev.value}
+                 next : ${current.next.value}`
+                )
+            }
+            current = current.next
+        }
     }
 
 

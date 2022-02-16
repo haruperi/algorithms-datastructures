@@ -1,6 +1,7 @@
 /*******************************************   Creating Arrays   ******************************/
 const numArray = [1,2,3,4,5]
-const numArray2 = [7,8,9]
+const numArray2 = [8,9]
+
 
 /*******************************************   Insertion   ************************************/
 //end
@@ -61,57 +62,38 @@ const NumsAddingTo = (array, num) => {
     }
     return -1
 }
-console.log(NumsAddingTo([1,2,3,4,5],9))
-
-//--------------------------------
-function Car(color, weight) {
-    this.color = color;
-    this.weight = weight;
-    this.engineRunning = false;
-}
-
-Car.prototype.startEngine = function () {
-    this.engineRunning = true;
-};
-
-Car.prototype.addGas = function (litre) {
-    // ...
-};
-
-const myCar = new Car('red', '2mt');
-myCar.color;
-// => 'red'
-myCar.engineRunning;
-// => false
 
 
+//IMPLEMENT THE ARRAY.SLICE() FUNCTION FROM SCRATCH
+const sliceFunction =  (array, startIndex, endIndex) => {
+    if (!startIndex && !endIndex)
+        return array
 
- function Size(width = 80 , height = 60) {
-    this.width = width
-    this.height = height
-}
+    if (!endIndex)
+        endIndex = array.length-1
 
-Size.prototype.resize = function (width, height){
-    this.width = width
-    this.height = height
-}
-
- function Position (x = 0 , y = 0) {
-    this.x = x
-    this.y = y
-}
-
-Position.prototype.move = function (newX, newY){
-    this.x = newX
-    this.y = newY
-}
-
-class ProgramWindow  {
-    constructor() {
-        this.screenSize = new Size(800, 600)
-        this.size = new Size()
-        this.position = new Position()
+    let newArray = []
+    while (startIndex <= endIndex){
+        newArray.push(array[startIndex])
+        startIndex++
     }
+    return newArray
 }
-const programWindow = new ProgramWindow();
-console.log(programWindow.screenSize.width)
+
+// FIND THE MEDIAN OF A SORTED ARRAYS OF THE SAME SIZE
+const median = (array) => {
+   if (array.length === 0)
+      return -1
+
+    if (array.length === 1)
+        return array[0]
+
+    if (array.length % 2 === 1){
+        return array[Math.floor(array.length/2)]
+    }
+
+    return array[array.length/2] + array[array.length/2 -1]/2
+}
+console.log(sliceFunction(numArray,2,4))
+
+//1,2,3,4
