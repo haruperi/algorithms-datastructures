@@ -1,10 +1,14 @@
-import { Linkedlist } from "./data-structures/linkedlist.js"
-import { Doublelinkedlist} from "./data-structures/doublelinkedlist.js"
-import { Stack } from "./data-structures/stack.js"
-import { Queque } from "./data-structures/queque.js"
-import { BinarySearchTree } from "./data-structures/binary-search-tree.js";
-import { Hashtables } from "./data-structures/hashtables.js";
-import { factorial } from "./algorithms/recursion.js";
+'use strict'
+
+
+//import { Linkedlist } from "./data-structures/linkedlist.js"
+//import { Doublelinkedlist} from "./data-structures/doublelinkedlist.js"
+//import { Stack } from "./data-structures/stack.js"
+//import { Queque } from "./data-structures/queque.js"
+//import { BinarySearchTree } from "./data-structures/binary-search-tree.js";
+//import { Hashtables } from "./data-structures/hashtables.js";
+//const recursion = require("./algorithms/recursion")
+  const sorting = require('./algorithms/sorting')
 
 /*****     Data Structures : Linked List     *****/
 /* Constructor */
@@ -135,19 +139,16 @@ import { factorial } from "./algorithms/recursion.js";
 
 /*****     Data Structures : Hash Tables     *****/
 /* Constructor */
-let hashtable = new Hashtables()
+// let hashtable = new Hashtables()
 
 /* Set */
-hashtable.set("lumber", 70)
-hashtable.set("washers", 50)
-hashtable.set("bolts", 1400)
-
-
-
-
-
+// hashtable.set("lumber", 70)
+// hashtable.set("washers", 50)
+// hashtable.set("bolts", 1400)
 
 /*****     Algorithms : Recursion    *****/
+//console.log(recursion.factorial(5))
 
-// Output
-console.log(factorial(5))
+
+/*****     Algorithms : Bubble Sorting    *****/
+console.log(sorting.selectionSort([4,2,6,5,1,3]))

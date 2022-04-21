@@ -29,12 +29,31 @@ class Stack {
         if (this.length === 0)
             return undefined
 
-        let temp = this.top
+        let stackTop = this.top
         this.top = this.top.next
-        temp.next = null
+        stackTop.next = null
         this.length--
 
-        return temp
+        return stackTop
+    }
+
+    printStack(){
+        let current = this.top
+        for (let i = 0; i < this.length; i++) {
+            if (this.length === 1 || i === this.length-1){
+                console.log(
+                    `Value: ${current.value}
+                     Next: null`
+                )
+            } else {
+                console.log(
+                    `Value: ${current.value}
+                     Next: ${current.next.value}`
+                )
+            }
+            current = current.next
+
+        }
     }
 
 }

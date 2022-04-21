@@ -28,7 +28,20 @@ const selectionSort = (arr) => {
     return arr
 }
 
+const insertionSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        let temp = arr[i]
+        let j = i+1
+        while (j>-1){
+            if (arr[j]<temp){
+                arr[i] = arr[j]
+            }
+            j--
+        }
+    }
 
+    return arr
+}
 
 
 

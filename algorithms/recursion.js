@@ -1,4 +1,4 @@
-
+'use strict'
 
 const factorial = (num) => {
     if (num === 1)
@@ -7,4 +7,5 @@ const factorial = (num) => {
     return num * factorial(num-1)
 }
 
-export { factorial }
+exports.factorial = factorial
+//export { factorial }
