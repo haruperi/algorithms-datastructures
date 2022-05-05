@@ -32,3 +32,21 @@ const selectionSort = (arr) => {
     }
     return arr
 }
+
+
+// O(N^2)
+const insertionSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        let pointer = i+1
+        let current = i
+        while (arr[current] > arr[pointer] && pointer >= 0 && current >=0){
+            swap(arr, current, pointer)
+            pointer--
+            current--
+        }
+    }
+    return arr
+}
+
+const arr = [ 5, 3, 4, 1, 2 ]
+console.log(insertionSort(arr))
