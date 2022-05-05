@@ -48,5 +48,45 @@ const insertionSort = (arr) => {
     return arr
 }
 
+
+const mergeArrays = (arr1, arr2) => {
+  const arr = []
+    let arr1Pointer = 0
+    let arr2Pointer = 0
+
+    while ((arr1Pointer < arr1.length) && (arr2Pointer < arr2.length)){
+
+        if (arr1[arr1Pointer] < arr2[arr2Pointer]){
+            arr.push(arr1[arr1Pointer])
+            arr1Pointer++
+        } else {
+            arr.push(arr2[arr2Pointer])
+            arr2Pointer++
+        }
+    }
+
+    while (arr1Pointer< arr1.length){
+        arr.push(arr1[arr1Pointer])
+        arr1Pointer++
+    }
+
+    while (arr2Pointer< arr2.length){
+        arr.push(arr2[arr2Pointer])
+        arr2Pointer++
+    }
+
+    return arr
+}
+
+const mergeSort = (arr) => {
+  if (arr.length <= 1) return arr
+
+    let mid = Math.floor(arr.length/2)
+    let left = mergeSort(arr.slice(0, mid))
+    let right = mergeSort(arr.slice(mid))
+    return mergeArrays(left,right)
+}
+
 const arr = [ 5, 3, 4, 1, 2 ]
-console.log(insertionSort(arr))
+console.log(mergeSort(arr))
+
